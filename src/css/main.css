@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.header__logo {
+  background-color: #afafaf;
+  flex: 0 0 65%;
+  /* flex-basis: 70%;
+  flex-grow: 0;
+  flex-shrink: 0; */
+}
+.header__navbar {
+  background-color: #fa9696;
+  flex: 0 0 35%;
+  /* flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 1; */
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.header__anchor {
+  text-decoration: none;
+  color: #000;
+  transition: color 800ms ease;
+}
+
+.header__anchor:hover {
+  color: red;
+  transition: color 500ms ease;
+}
+
+.main {
+  width: 90%;
+  margin: 60px auto 0px;
+}
+
+.boxes {
+  border: 2px dotted #000;
+  width: 100%;
+  height: 250px;
+}
+.box__1 {
+  background-color: #aea7a77a;
+}
+.box__2 {
+  background-color: #ed700a;
+}
+
+.box__3 {
+  background-color: #a92de2;
+}
+
+.box__4 {
+  background-color: #2d81e2;
+}
+
+/* Flexbox */
+.boxes {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.box {
+  /* flex-grow: 1; */
+  /* flex-shrink: 0;
+  flex-basis: 0; */
+  flex: 1 0 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.0625);
+  transition: transform 200ms ease-in-out;
+}
